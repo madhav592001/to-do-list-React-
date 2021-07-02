@@ -1,0 +1,11 @@
+touch .gitignore  // for files which we don't want to upload
+git config --global user.name
+git config --global user.email
+git init  : initialize a repo.
+git add . : staging the files 
+git commit -m "first commit" commiting files
+git status : for checking stause
+git $ ssh-keygen -t ed25519 -C "madhavshuklasr3@gmai.com"     // for generating ssh key
+tail <path to id_rsa.pub>  add this key to git hub account
+git remote add origin  <project url>
+git push origin master 
