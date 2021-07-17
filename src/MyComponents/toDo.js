@@ -12,14 +12,10 @@ export default function ToDo(props) {
 
       {props.todos.length === 0    // ternary operator
         ? "No ToDo's to display"
-        : props.todos.map((todos) => {
+        : props.todos.map((todo) => {
             return (
               <>
-              <ToDoItem                 // todo item ma pass kiye sab
-                todos={todos}
-                key={todos.sno}
-                ondelete={props.ondelete}
-              />
+              <ToDoItem todo = {todo} />
               <hr />
               </>
             );
